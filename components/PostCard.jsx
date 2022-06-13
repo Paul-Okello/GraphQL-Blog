@@ -8,20 +8,12 @@ const PostCard = ({ post }) => {
     <div className="x z-50 mb-8 rounded-lg bg-slate-50  p-0 pb-12 shadow-lg lg:p-8">
       <div className="relative mb-6 inline-block h-60 w-full shadow-md lg:h-80">
         <Image
-          unoptimized
           alt={post.title}
           className="absolute h-80 w-full transform rounded-t-lg  object-cover object-top shadow-lg transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:grayscale lg:rounded-lg"
           layout="fill"
           src={post.featuredImage.url}
         />
       </div>
-      {/* <div className="relative mb-6 overflow-hidden pb-80 shadow-md">
-        <img
-          src={post.featuredImage.url}
-          alt=""
-          className="absolute h-80 w-full transform rounded-t-lg  object-cover object-top shadow-lg transition-all duration-200 hover:scale-105 hover:cursor-pointer hover:grayscale lg:rounded-lg"
-        />
-      </div> */}
 
       <h1 className="mb-8 cursor-pointer text-center text-3xl font-semibold transition duration-700 hover:text-blue-500/60">
         <Link href={`/post/${post.slug}`}>{post.title}</Link>
@@ -29,8 +21,6 @@ const PostCard = ({ post }) => {
       <div className="mb-8 block w-full items-center justify-center text-center lg:flex">
         <div className="mb-4 mr-8 flex w-full items-center  justify-center lg:mb-0 lg:w-auto">
           <Image
-            // unoptimized
-            // loader={grpahCMSImageLoader}
             alt={post.author.name}
             height="30px"
             width="30px"

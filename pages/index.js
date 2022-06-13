@@ -33,12 +33,7 @@ const Home = ({ posts }) => {
 export default Home
 
 // Fetch data at build time
-export async function getStaticProps({ res }) {
-  // Configure Caching for performance
-  res.setHeader(
-    'Cache-Control',
-    'public, s-maxage=10, stale-while-revalidate=59'
-  )
+export async function getStaticProps() {
   const posts = (await getPosts()) || []
   return {
     props: { posts },
