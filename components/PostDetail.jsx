@@ -48,7 +48,7 @@ const PostDetail = ({ post }) => {
         )
       case 'image':
         return (
-          <img
+          <Image
             key={index}
             alt={obj.title}
             height={obj.height}
@@ -75,7 +75,7 @@ const PostDetail = ({ post }) => {
         <div className="px-4 lg:px-0">
           <div className="mb-8 flex w-full items-center">
             <div className="mr-8 hidden items-center  justify-center md:flex lg:mb-0 lg:w-auto">
-              <img
+              <Image
                 alt={post.author.name}
                 height="30px"
                 width="30px"
