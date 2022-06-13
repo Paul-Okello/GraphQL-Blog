@@ -4,7 +4,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const PostCard = ({ post }) => {
-  console.log(post)
   return (
     <div className="x z-50 mb-8 rounded-lg bg-slate-50  p-0 pb-12 shadow-lg lg:p-8">
       <div className="relative mb-6 inline-block h-60 w-full shadow-md lg:h-80">
